@@ -5,12 +5,13 @@ import Image from "./common/Image";
 
 const Home = () => {
   return (
-    <div>
-      Home 페이지 입니다~
-      <div>
+    <div className="Home-wrapper">
+      <div className="Home-content-container">
+        Home 페이지 입니다~
         <Image src={mainImg} alt="home_img"></Image>
+        <Button to="/name">이름 입력하기</Button>
+
       </div>
-      <Button to="/name">이름 입력하기</Button>
     </div>
   );
 };

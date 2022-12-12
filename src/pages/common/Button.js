@@ -2,12 +2,11 @@ import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 const buttonStyle = css`
+  width: 100%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  padding: 0.25rem 1rem;
-
   background: red;
   color: white;
   font-size: 1rem;
