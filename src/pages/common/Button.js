@@ -7,10 +7,11 @@ const buttonStyle = css`
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  background: red;
+  background: rgb(8, 120, 60);
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
+  text-decoration: none;
 `;
 
 const StyledButton = styled.button`
