@@ -6,7 +6,7 @@ const Name = () => {
     <div className="Name-wrapper">
       <div className="Name-content-container">
         <form>
-          <input placeholder="이름을 입력하세요"></input>
+          <input className="Name-input" placeholder="이름을 입력하세요"></input>
           <Button to="/situation">시작하기</Button>
         </form>
       </div>
