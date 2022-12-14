@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "./common/Image";
-import testImg from "./img/main.jpg";
-import Button from "./common/Button";
+import Image from "../common/Image";
+import testImg from "../img/main.jpg";
+import Button from "../common/Button";
 
 const Situation = () => {
   return (
