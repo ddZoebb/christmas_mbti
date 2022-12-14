@@ -117,12 +117,35 @@
 .Result-content-container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding-top: 2rem;
 }
 
-.Result-title{
+.Result-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff491;
+  outline: 3px solid #ffe600;
+}
+
+.Result-prefix {
   width: 100%;
   text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+  padding-top: 0.5rem;
+}
+
+.Result-title {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 0.5rem;
 }
 
 @keyframes App-logo-spin {
