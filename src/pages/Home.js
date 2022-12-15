@@ -9,7 +9,7 @@ const Home = () => {
       <div className="Home-content-container">
         Home 페이지 입니다~
         <Image src={mainImg} alt="home_img"></Image>
-        <Button to="/name">이름 입력하기</Button>
+        <Button to="/name">시작하기</Button>
 
       </div>
     </div>
