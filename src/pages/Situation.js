@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../common/Image";
-import testImg from "../img/main.jpg";
+import testImg from "../img/app_title.png";
 import Button from "../common/Button";
 
 const Situation = () => {
