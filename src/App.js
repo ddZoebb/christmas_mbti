@@ -6,16 +6,20 @@ import Situation from "./pages/Situation";
 import Result from "./pages/Result";
 
 import NotFound from "./pages/NotFound";
+import Snow from "./common/Snow";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/name" element={<Name />}></Route>
-      <Route path="/situation" element={<Situation />}></Route>
-      <Route path="/result" element={<Result />}></Route>
-      <Route path="*" element={<NotFound />}></Route>
-    </Routes>
+    <div>
+      <Snow/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/name" element={<Name />}></Route>
+        <Route path="/situation" element={<Situation />}></Route>
+        <Route path="/result" element={<Result />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+    </div>
   );
 };
 
