@@ -5,8 +5,7 @@ import Button from "../common/Button";
 
 const Situation = () => {
   return (
-    <div>
-      <h1>상황</h1>
+    <div className="Situation-wrapper">
       <Image src={testImg}></Image>
       <Button>상황 대답1</Button>
       <Button>상황 대답2</Button>
