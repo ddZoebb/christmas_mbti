@@ -93,12 +93,23 @@
 .Situation-wrapper {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
   padding-top: 3rem;
   background-color: var(--main-bg-color);
 }
 
 .Situation-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   animation: fadein 1s;
+}
+
+.Question {
+  font-size: 1.2rem;
+  color: #FFFAFA;
+  padding-top:7rem;
 }
 
 .Result-wrapper {
@@ -158,7 +169,7 @@
 .Result-message {
   width: 100%;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   color: black;
   padding-top: 0.5rem;
@@ -180,7 +191,7 @@
   width: 100%;
   text-align: center;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 100;
   padding-bottom: 0.5rem;
   font-family: 'Black Han Sans', sans-serif;
 }
