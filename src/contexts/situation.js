@@ -15,6 +15,7 @@ const SituationProvider = ({ children }) => {
   const [J, setJ] = useState(0);
 
   const [sitCount, setSitCount] = useState(1);
+  //클릭한 상황수들 체크
 
   const increase = useCallback(
     (mbti) => {
