@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useState } from "react";
 import { DataConsumer } from "../contexts/data";
-import SituationContext, { SituationConsumer } from "../contexts/situation";
+import SituationContext from "../contexts/situation";
 
 function Result() {
   const results = [
@@ -205,12 +205,13 @@ function Result() {
     (state.J > 0 ? "J" : "P");
 
   const result = results.find((element) => element.id === MBTI);
+  var imgsrc = "img/" + result.id + ".png";
 
   return (
     <div className="Result-wrapper">
       <div className="Result-card">
         <div className="Result-img-container">
-          <img className="Result-img" alt="결과이미지" src="img\ISFP.png"></img>
+          <img className="Result-img" alt="결과이미지" src={imgsrc}></img>
         </div>
         <div className="Result-content-container">
           <div className="Result-box">
