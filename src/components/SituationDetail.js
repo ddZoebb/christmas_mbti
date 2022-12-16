@@ -5,6 +5,7 @@ import Button from "../common/Button";
 import { SituationConsumer } from "../contexts/situation";
 
 const SituationDetail = ({ selectSit }) => {
+  const mbti = selectSit.mbti;
   return (
     <div className="Situation-wrapper">
       <SituationConsumer>
@@ -12,10 +13,12 @@ const SituationDetail = ({ selectSit }) => {
           <div className="Situation-content-container">
             <Image src={testImg}></Image>
             <h2>{selectSit.text}</h2>
-            <Button to="/situation" onClick={() => actions.count()}>
+            <Button onClick={() => actions.increase(mbti)}>
               {selectSit.pos}
             </Button>
-            <Button>{selectSit.neg}</Button>
+            <Button onClick={() => actions.decrease(mbti)}>
+              {selectSit.neg}
+            </Button>
           </div>
         )}
       </SituationConsumer>
