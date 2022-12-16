@@ -4,7 +4,6 @@ const DataContext = createContext({
   state: { name: "none" },
   actions: {
     setName: () => {},
-    testLog: () => {},
   },
 });
 
