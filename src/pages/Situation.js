@@ -9,7 +9,7 @@ const Situation = () => {
       <div className="Situation-content-container">
         <Image src={testImg}></Image>
         <Button>상황 대답1</Button>
-        <Button>상황 대답2</Button>
+        <Button to="/result">상황 대답2</Button>
       </div>
     </div>
   );
