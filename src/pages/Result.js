@@ -213,7 +213,7 @@ function Result() {
         <div>
           <DataConsumer>
             {({ state }) => (
-              <div className="Result-title">{state.name} 님의 결과는</div>
+              <div className="Result-main-title">{state.name} 님의 결과는</div>
             )}
           </DataConsumer>
         </div>
