@@ -1,4 +1,5 @@
 import React, { useCallback, useContext } from "react";
+import { Navigate } from "react-router-dom";
 
 import SituationDetail from "../components/SituationDetail";
 import SituationContext, { SituationConsumer } from "../contexts/situation";
@@ -96,7 +97,7 @@ const Situation = () => {
   const selectSit = situations.find((element) => element.id === state.sitCount);
   switch (state.sitCount) {
     case 13:
-      return <Result></Result>;
+      return <Navigate to="/result"></Navigate>;
 
     default:
       return (

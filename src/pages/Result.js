@@ -220,7 +220,7 @@ function Result() {
                 {({ state }) => <div>{state.name}님의 결과는</div>}
               </DataConsumer>
             </div>
-            <div>MBTI:{MBTI}</div>
+
             <div className="Result-message">{result.message}</div>
             <div className="Result-prefix">{result.prefix}</div>
             <div className="Result-title">{result.character}</div>
