@@ -4,21 +4,22 @@ import { DataConsumer } from "../contexts/data";
 
 const Name = () => {
   const [value, setValue] = useState("");
+  const [avail, setAvail] = useState("none");
   const onChange = useCallback((e) => {
     setValue(e.target.value);
     if (e.target.value.includes(" ")) {
       setMsg("공백은 포함되지 않게 해주세요");
-      setValidate(false);
+      setAvail("none");
     } else if (!(e.target.value.length >= 2 && e.target.value.length <= 5)) {
       setMsg("2글자 이상, 5글자 미만으로 해주세요");
-      setValidate(false);
+      setAvail("none");
     } else {
       setMsg("");
-      setValidate(true);
+
+      setAvail("inline");
     }
   }, []);
   const [msg, setMsg] = useState("");
-  const [validate, setValidate] = useState(false);
 
   return (
     <div className="Name-wrapper">
@@ -40,6 +41,7 @@ const Name = () => {
                 onClick={() => {
                   actions.setName(value);
                 }}
+                style={{ display: avail }}
               >
                 다음
               </Button>

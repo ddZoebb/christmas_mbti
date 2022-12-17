@@ -11,8 +11,8 @@ const SituationDetail = ({ selectSit }) => {
       <SituationConsumer>
         {({ actions }) => (
           <div className="Situation-content-container">
-            <Image src={testImg}></Image>
-            <h2>{selectSit.text}</h2>
+            <h3>{selectSit.id}/12</h3>
+            <h3>{selectSit.text}</h3>
             <Button onClick={() => actions.increase(mbti)}>
               {selectSit.pos}
             </Button>
