@@ -34,7 +34,7 @@ const Name = () => {
                 onChange={onChange}
               ></input>
 
-              <div>{msg}</div>
+              <div className="Name-msg">{msg}</div>
 
               <Button
                 to="/situation"

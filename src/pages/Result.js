@@ -210,17 +210,18 @@ function Result() {
   return (
     <div className="Result-wrapper">
       <div className="Result-card">
+        <div>
+          <DataConsumer>
+            {({ state }) => (
+              <div className="Result-title">{state.name} 님의 결과는</div>
+            )}
+          </DataConsumer>
+        </div>
         <div className="Result-img-container">
           <img className="Result-img" alt="결과이미지" src={imgsrc}></img>
         </div>
         <div className="Result-content-container">
           <div className="Result-box">
-            <div>
-              <DataConsumer>
-                {({ state }) => <div>{state.name}님의 결과는</div>}
-              </DataConsumer>
-            </div>
-
             <div className="Result-message">{result.message}</div>
             <div className="Result-prefix">{result.prefix}</div>
             <div className="Result-title">{result.character}</div>

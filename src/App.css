@@ -63,6 +63,13 @@
   background-color: var(--main-bg-color);
 }
 
+.Name-msg{
+  padding-bottom: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  display:flex;
+  text-align: center;
+  color: white;
+}
 
 
 .Name-content-container {
