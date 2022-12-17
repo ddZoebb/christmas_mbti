@@ -355,7 +355,21 @@
   text-align: center;
 }
 
-.pd{
+.kakao-share-button{
+  padding-top:1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#kakao-link-btn{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.Share-text{
+  font-size: medium;
+  font-weight: bold;
 }
 
 a{

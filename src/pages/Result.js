@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DataConsumer } from "../contexts/data";
 import SituationContext from "../contexts/situation";
+import KakaoShareButton from "../KaKao";
+
 
 function Result() {
   const results = [
@@ -208,13 +210,6 @@ function Result() {
   const result = results.find((element) => element.id === MBTI);
   var imgsrc = "img/" + result.id + ".png";
 
-  // eslint-disable-next-line no-lone-blocks
-  {
-    if (!window.Kakao.isInitialized()) {
-      window.Kakao.init("84b3b7266483a7e081f592efa793cab5");
-    }
-  }
-
   return (
     <div className="Result-wrapper">
       <div className="Result-card">
@@ -257,6 +252,7 @@ function Result() {
             </div>
           </div>
         </div>
+        <KakaoShareButton />
         <div className="Retry-container">
           <Link to="/">
             <button
@@ -265,7 +261,7 @@ function Result() {
                 window.location.replace("/");
               }}
             >
-              처음부터 다시하기
+              테스트 다시하기
             </button>
           </Link>
         </div>
