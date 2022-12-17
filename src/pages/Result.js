@@ -1,4 +1,5 @@
 import React, { useCallback, useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { DataConsumer } from "../contexts/data";
 import SituationContext from "../contexts/situation";
 
@@ -248,6 +249,9 @@ function Result() {
               <div className="Result-relation-content">{result.bad}</div>
             </div>
           </div>
+        </div>
+        <div className="Retry-container">
+          <Link to="/"><button className="Retry">처음부터 다시하기</button></Link>
         </div>
       </div>
     </div>

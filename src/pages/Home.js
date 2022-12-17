@@ -3,7 +3,9 @@ import Button from "../common/Button";
 import mainImg from "../img/app_title.png";
 import Image from "../common/Image";
 
+
 const Home = () => {
+
   return (
     <div className="Home-wrapper">
       <div className="Home-content-container">
