@@ -11,8 +11,7 @@ const SituationDetail = ({ selectSit }) => {
       <SituationConsumer>
         {({ actions }) => (
           <div className="Situation-content-container">
-            <h3>{selectSit.id}/12</h3>
-            <h3>{selectSit.text}</h3>
+            <p className="Question">{selectSit.text}</p>
             <Button onClick={() => actions.increase(mbti)}>
               {selectSit.pos}
             </Button>
