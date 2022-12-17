@@ -20,7 +20,7 @@ const Name = () => {
     }
   }, []);
   const [msg, setMsg] = useState("");
-
+  
   return (
     <div className="Name-wrapper">
       <div className="Name-content-container">

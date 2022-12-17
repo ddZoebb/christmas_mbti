@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DataConsumer } from "../contexts/data";
 import SituationContext from "../contexts/situation";
@@ -208,6 +208,13 @@ function Result() {
   const result = results.find((element) => element.id === MBTI);
   var imgsrc = "img/" + result.id + ".png";
 
+  // eslint-disable-next-line no-lone-blocks
+  {
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init("84b3b7266483a7e081f592efa793cab5");
+    }
+  }
+
   return (
     <div className="Result-wrapper">
       <div className="Result-card">
@@ -251,7 +258,30 @@ function Result() {
           </div>
         </div>
         <div className="Retry-container">
-          <Link to="/"><button className="Retry">처음부터 다시하기</button></Link>
+          <Link to="/">
+            <button
+              className="Retry"
+              onClick={() => {
+                window.location.replace("/");
+              }}
+            >
+              처음부터 다시하기
+            </button>
+          </Link>
+        </div>
+        <div className="Credits-container">
+          <div className="Credits-developer">Developed by</div>
+          <div className="Credits-developer-container">
+            <div className="Credits-developer">
+              <a href="https://www.instagram.com/ej_rarus">Eunjae Lee</a>
+            </div>
+            <div className="Credits-developer">
+              <a href="https://github.com/ddZoebb">Joohee Lee</a>
+            </div>
+          </div>
+          <div className="Credits-copyright">
+            © 2022. EJ&JH. All rights reserved.
+          </div>
         </div>
       </div>
     </div>
