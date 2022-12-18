@@ -22,8 +22,8 @@ const KakaoShareButton = () => {
           description: '🎅 나는 어떤 크리스마스 친구일까요? 🎄 🏃 지금 바로 확인하러 가기! 🏃‍♀️',
           imageUrl: 'http://k.kakaocdn.net/dn/56nyQ/btrTQv7YVdd/O1siS7T6dy4PpKSJL4NbU1/kakaolink40_original.png', // i.e. process.env.FETCH_URL + '/logo.png'
           link: {
-            mobileWebUrl: "http://localhost:3000",
-            webUrl: "http://localhost:3000",
+            mobileWebUrl: "http://christmas-mbti.com",
+            webUrl: "http://christmas-mbti.com",
           },
         },
         social: {
