@@ -35,8 +35,8 @@ const KakaoShareButton = () => {
           {
             title: '테스트 하러가기',
             link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
+              mobileWebUrl: "http://christmas-mbti.com",
+              webUrl: "http://christmas-mbti.com",
             },
           },
         ],
